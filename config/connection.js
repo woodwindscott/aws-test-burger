@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
   port: 3306,
   user: "masterUsername",
   password: "Care1self!",
-  database: "innodb"
+  database: "burgers"
 });
 
 
