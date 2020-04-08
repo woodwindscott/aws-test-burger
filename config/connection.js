@@ -10,11 +10,11 @@ var mysql = require("mysql");
 // });
 
 var connection = mysql.createConnection({
-  host: "aa1nebb9sip7z5v.c8mftva3qql4.us-east-1.rds.amazonaws.com",
+  host: "new-practice-database.c8mftva3qql4.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "root",
+  user: "masterUsername",
   password: "Care1self!",
-  database: "aa1nebb9sip7z5v"
+  database: "new-practice-database"
 });
 
 
