@@ -9,12 +9,20 @@ var mysql = require("mysql");
 //   database: process.env.RDS_DB_NAME
 // });
 
+// var connection = mysql.createConnection({
+//   host: "new-practice-database.c8mftva3qql4.us-east-1.rds.amazonaws.com",
+//   port: 3306,
+//   user: "masterUsername",
+//   password: "Care1self!",
+//   database: "burgers"
+// });
+
 var connection = mysql.createConnection({
-  host: "new-practice-database.c8mftva3qql4.us-east-1.rds.amazonaws.com",
+  host: "sp6xl8zoyvbumaa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   port: 3306,
-  user: "masterUsername",
-  password: "Care1self!",
-  database: "burgers"
+  user: "zq6hqqgieuhazqex",
+  password: "zhvpqechwxfwczdk",
+  database: "jda9x20ca52drx4z"
 });
 
 
