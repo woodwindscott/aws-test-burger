@@ -1,0 +1,50 @@
+{{!-- This is the main display of all the data --}}
+
+{{!-- Header --}}
+<img src="assets/img/burger.jpeg">
+<h1>Eat-Da-Burger!</h1>
+
+{{!-- Create the wrapper and left block for burgers yet to be eaten --}}
+<div class="wrapper">
+  <div class="left-block">
+    <h2>I'm Hungry!</h2>
+
+    <div>
+      {{#each burgers}}
+        {{!-- Only grabs the burgers that have been eaten --}}
+        {{#unless devoured}}
+          {{> burgers/burgers-block devoured=false}}
+        {{/unless}}
+      {{/each}}
+    </div>
+
+  </div>
+
+  {{!-- Middle Block for Burger Entry --}}
+  <div class="middle-block">
+      <h2>Add a Burger</h2>
+
+      <form class="create-form">
+          <div>
+              <input type="text" id="newBurger" name="name" size="35">
+          </div>
+          <br>
+          <button type="submit">Add a Burger</button>
+      </form>
+  </div>
+
+  {{!-- Right Block for Burgers that have been eaten --}}
+  <div class="right-block">
+      <h2>Yummy in My Tummy!</h2>
+
+      <div>
+        {{#each burgers}}
+          {{!-- Only displays the burgers that have been "devoured" --}}
+          {{#if devoured}}
+            {{> burgers/burgers-block devoured=true}}
+          {{/if}}
+        {{/each}}
+      </div>
+  </div>
+
+</div>
