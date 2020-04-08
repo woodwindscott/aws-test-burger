@@ -18,7 +18,7 @@ var mysql = require("mysql");
 // });
 
 var connection = mysql.createConnection({
-  host: "sp6xl8zoyvbumaa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  host: process.env.MY_HOSTNAME,
   port: 3306,
   user: "zq6hqqgieuhazqex",
   password: "zhvpqechwxfwczdk",
